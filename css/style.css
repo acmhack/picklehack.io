@@ -1,0 +1,219 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100vw;
+    background: url("../img/landing-page-blob.png") no-repeat;
+    background-size: auto 130%;
+    background-position: 117% 27%;
+    display: flex;
+}
+
+nav {
+    height: 100px;
+    padding: 10px;
+    position: fixed;
+    display: flex;
+    width: 100%;
+}
+
+.mobile {
+    display: none;
+}
+
+nav .logo,
+nav .logo img {
+    height: 100%;
+}
+
+nav .logo {
+    margin: 0 auto;
+}
+
+.main-content-container {
+    display: flex;
+    margin: auto;
+    padding: 0 50px 0 105px;
+    max-width: 1328px;
+}
+
+.about-info {
+    margin: auto 0;
+    width: 47%;
+}
+
+.pickle-img {
+    margin-left: auto;
+    display: flex;
+}
+
+.pickle-img img {
+    margin-left: auto;
+}
+
+.title {
+    font-family: kon-tiki-aloha-jf, sans-serif;
+    font-size: 4.5rem;
+    font-weight: 400;
+    margin: 0;
+}
+
+.subtitle {
+    font-family: parisplus-sombre, sans-serif;
+    font-size: 2rem;
+    margin: 0;
+}
+
+.description {
+    margin-bottom: 2.5rem;
+}
+
+.description,
+.input input,
+.input button {
+    font-family: parisplus-std, sans-serif;
+    font-size: 1.15rem;
+}
+
+.input {
+    display: flex;
+}
+
+.input input {
+    background-color: #F4F7D5;
+    border: none;
+    padding: 15px 0 15px 15px;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+}
+
+::placeholder {
+    color: black;
+}
+
+.input input:focus,
+.input button:focus {
+    outline: none;
+}
+
+.input button {
+    font-family: parisplus-std, sans-serif;
+    font-weight: 700;
+    background-color: #B768DC;
+    border: none;
+    color: white;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    padding: 0 15px;
+}
+
+@media (max-width: 1175px) {
+    body {
+        background-position: 150% 27%;
+    }
+
+    .about-info {
+        width: 50%;
+    }
+
+    .pickle-img img {
+        width: 100%;
+    }
+
+    .title {
+        font-size: 4rem;
+    }
+    
+    .subtitle {
+        font-size: 1.6rem;
+    }
+    
+    .description,
+    .input input,
+    .input button {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 1045px) {
+    body {
+        background-size: auto 110%;
+        background-position: 170% 27%;
+    }
+}
+
+@media (max-width: 960px) {
+    .main-content-container {
+        padding: 0 50px 0 50px;
+    }
+
+    .about-info {
+        width: 60%;
+    }
+}
+
+@media (max-width: 851px) {
+    body {
+        background: none;
+        flex-direction: column;
+    }
+
+    nav {
+        height: 70px;
+        position: static;
+        width: auto;
+    }
+
+    .main-content-container {
+        flex-direction: column;
+        align-items: center;
+        max-width: 460px;
+        padding-bottom: 4rem;
+    }
+
+    .main-content-container .pickle-img {
+        order: -1;
+        margin: 0;
+        background: url(../img/landing-page-blob.png) no-repeat;
+        background-size: contain;
+        background-position: center;
+    }
+
+    .main-content-container .about-info {
+        text-align: center;
+        width: auto;
+    }
+
+    .about-info .description {
+        margin-bottom: 1.75rem;
+    }
+
+    .input {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 414px) {
+    .title {
+        font-size: 3.5rem;
+    }
+    
+    .subtitle {
+        font-size: 1.2rem;
+    }
+    
+    .description,
+    .input input,
+    .input button {
+        font-size: 0.9rem;
+    }
+
+    .input input {
+        width: 100%;
+    }
+
+    .main-content-container {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
