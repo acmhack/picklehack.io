@@ -70,7 +70,7 @@ nav .logo {
 
 .description,
 .input input,
-.input button {
+.input button.subscribe {
     font-family: parisplus-std, sans-serif;
     font-size: 1.15rem;
 }
@@ -96,7 +96,7 @@ nav .logo {
     outline: none;
 }
 
-.input button {
+.input button.subscribe {
     font-family: parisplus-std, sans-serif;
     font-weight: 700;
     background-color: #B768DC;
@@ -105,6 +105,12 @@ nav .logo {
     border-top-right-radius: 50px;
     border-bottom-right-radius: 50px;
     padding: 0 15px;
+    cursor: pointer;
+    transition: all 0.2s linear;
+}
+
+.input button.subscribe:hover {
+    opacity: 0.8;
 }
 
 @media (max-width: 1175px) {
