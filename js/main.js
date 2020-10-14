@@ -1,5 +1,7 @@
 var databaseRef = firebase.database().ref('emails/');
 var pickleImg = $('.pickle-img img');
+const maxLeft = $(window).width() / 64;
+        const maxTop = $(window).innerHeight() / 46.85
 
 function checkAndStoreEmail() {
     const emailInput = $('.input input');
@@ -45,8 +47,8 @@ function calcTop(y, maxTop) {
     return (-(maxTop * 2) / $(window).innerHeight()) * y + maxTop;
 }
 
-$(document).mousemove((e) => {
-    const maxLeft = $(window).width() / 64;
-    const maxTop = $(window).innerHeight() / 46.85
-    pickleImg.css('left', calcLeft(e.pageX, maxLeft)).css('top', calcTop(e.pageY, maxTop));
+$(document).mousemove(e => {
+    if($(window).width() > 851) {
+        pickleImg.css('left', calcLeft(e.pageX, maxLeft)).css('top', calcTop(e.pageY, maxTop));
+    }
 });

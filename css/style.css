@@ -148,6 +148,7 @@ nav .logo {
 
 ::placeholder {
     color: black;
+    font-size: 1rem;
 }
 
 .input input:focus,
@@ -237,6 +238,10 @@ nav .logo {
     .input input,
     .input button {
         font-size: 1rem;
+    }
+
+    ::placeholder {
+        font-size: 0.9rem;
     }
 }
 
