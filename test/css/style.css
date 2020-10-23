@@ -149,6 +149,14 @@ footer .grid-item {
     margin: 31.5px;
 }
 
+.schedule .items p:nth-child(2n + 1) {
+    font-weight: 500;
+}
+
+.schedule .items p:nth-child(2n) {
+    margin-bottom: 2rem;
+}
+
 @keyframes shake {
     0% {
         margin-left:-10px;
