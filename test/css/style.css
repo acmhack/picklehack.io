@@ -118,6 +118,7 @@ nav .logo {
     font-size: 64px;
     text-align: center;
     font-weight: 700;
+    margin-top: 7rem;
 }
 
 .subtext {
@@ -145,6 +146,15 @@ nav .logo {
 
 .team .grid {
     justify-content: space-evenly;
+}
+
+.team .grid .grid-item {
+    cursor: pointer;
+    transition: all 0.2s linear;
+}
+
+.team .grid .grid-item:hover {
+    transform: scale(1.1);
 }
 
 .team .grid-item .img-container {

@@ -52,3 +52,9 @@ $('.landing-page').mousemove(e => {
         pickleImg.css('left', calcLeft(e.pageX, maxLeft)).css('top', calcTop(e.pageY, maxTop));
     }
 });
+
+$('.team .grid .grid-item').click(goToDataLink);
+
+function goToDataLink() {
+    window.open($(this).data('link'), '_blank');
+}
