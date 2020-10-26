@@ -58,3 +58,8 @@ $('.team .grid .grid-item').click(goToDataLink);
 function goToDataLink() {
     window.open($(this).data('link'), '_blank');
 }
+
+$('.faq .items p:nth-child(2n + 1)').click(function() {
+    $(this).next().slideToggle();
+    $(this).children().toggleClass('rotated');
+});

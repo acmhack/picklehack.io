@@ -197,15 +197,46 @@ footer .grid-item img {
     width: auto;
 }
 
-.schedule .items p:nth-child(2n + 1),
 .faq .items p:nth-child(2n + 1) {
     font-weight: 600;
 }
 
-.schedule .items p:nth-child(2n),
 .faq .items p:nth-child(2n) {
     margin-bottom: 0.75rem;
     font-style: italic;
+}
+
+.schedule {
+  display: flex;
+  flex-direction: column;
+}
+
+.schedule .items .subtext {
+  text-align: left;
+}
+
+.schedule .items {
+  margin: 0 auto;
+}
+
+.schedule .items .date {
+  font-weight: 600;
+}
+
+.faq .items p:nth-child(2n + 1) {
+  cursor: pointer;
+}
+
+.faq .items p:nth-child(2n + 1) span {
+  transition: all 0.1s linear;
+}
+
+.faq .items p:nth-child(2n + 1) span.rotated {
+  transform: rotate(-180deg);
+}
+
+.faq .items p:nth-child(2n) {
+  display: none;
 }
 
 .sponsor-info {
