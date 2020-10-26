@@ -54,6 +54,7 @@ $('.landing-page').mousemove(e => {
 });
 
 $('.team .grid .grid-item').click(goToDataLink);
+$('.apply').click(goToDataLink);
 
 function goToDataLink() {
     window.open($(this).data('link'), '_blank');

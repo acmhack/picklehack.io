@@ -43,10 +43,29 @@ nav .logo {
 }
 
 .landing-page {
+  padding: 0 50px 0 105px;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.landing-page .main-content {
     display: flex;
     margin: auto;
-    padding: 0 50px 0 105px;
-    height: 100vh;
+}
+
+.landing-page .apply {
+    font-family: parisplus-std, sans-serif;
+    font-weight: 700;
+    background-color: #B768DC;
+    border: none;
+    color: white;
+    border-radius: 50px;
+    padding: 15px 30px;
+    text-decoration: none;
+    margin: 0 auto 5rem auto;
+    cursor: pointer;
+    transition: all 0.2s linear;
 }
 
 .about-info {
@@ -87,7 +106,8 @@ nav .logo {
 
 .description,
 .input input,
-.input button.subscribe {
+.input button.subscribe,
+.apply {
     font-family: parisplus-std, sans-serif;
     font-size: 1.15rem;
 }
@@ -475,7 +495,8 @@ footer .grid-item img {
     transition: all 0.2s linear;
 }
 
-.input button.subscribe:hover {
+.input button.subscribe:hover,
+.apply:hover {
     opacity: 0.8;
 }
 
@@ -602,11 +623,14 @@ footer .grid-item img {
         line-height: initial;
   }
 
-    .landing-page {
+  .landing-page {
+    max-width: 460px;
+        padding-bottom: 4rem;
+  }
+
+    .landing-page .main-content {
         flex-direction: column;
         align-items: center;
-        max-width: 460px;
-        padding-bottom: 4rem;
   }
 
     .landing-page .pickle-img {
@@ -625,6 +649,10 @@ footer .grid-item img {
 
     .input {
         justify-content: center;
+  }
+
+  .landing-page .apply {
+    margin-top: 4rem;
   }
 }
 
