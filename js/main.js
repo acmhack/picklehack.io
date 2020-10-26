@@ -47,8 +47,20 @@ function calcTop(y, maxTop) {
     return (-(maxTop * 2) / $(window).innerHeight()) * y + maxTop;
 }
 
-$(document).mousemove(e => {
+$('.landing-page').mousemove(e => {
     if($(window).width() > 851) {
         pickleImg.css('left', calcLeft(e.pageX, maxLeft)).css('top', calcTop(e.pageY, maxTop));
     }
+});
+
+$('.team .grid .grid-item').click(goToDataLink);
+$('.apply').click(goToDataLink);
+
+function goToDataLink() {
+    window.open($(this).data('link'), '_blank');
+}
+
+$('.faq .items p:nth-child(2n + 1)').click(function() {
+    $(this).next().slideToggle();
+    $(this).children().toggleClass('rotated');
 });
