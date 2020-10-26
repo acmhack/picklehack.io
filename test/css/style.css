@@ -112,7 +112,7 @@ nav .logo {
 }
 
 .section-header {
-    font-family: 'Poppins', sans-serif;
+    font-family: kon-tiki-aloha-jf, sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 64px;
@@ -122,7 +122,7 @@ nav .logo {
 }
 
 .subtext {
-    font-family: 'Poppins', sans-serif;
+    font-family: parisplus-std, sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 36px;
@@ -171,7 +171,7 @@ nav .logo {
 }
 
 .team .grid-item .name {
-    font-family: 'Poppins', sans-serif;
+    font-family: parisplus-std, sans-serif;
     text-align: center;
 }
 
@@ -199,7 +199,7 @@ footer .grid-item img {
 
 .schedule .items p:nth-child(2n + 1),
 .faq .items p:nth-child(2n + 1) {
-    font-weight: 500;
+    font-weight: 600;
 }
 
 .schedule .items p:nth-child(2n),
