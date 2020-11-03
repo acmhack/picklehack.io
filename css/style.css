@@ -238,6 +238,16 @@ footer .grid-item img {
   margin: 0 auto;
 }
 
+.schedule .items div {
+  display: flex;
+}
+
+.schedule .items div p:first-child {
+  flex-grow: 0;
+  flex-shrink: 0;
+  margin-right: 0.5rem;
+}
+
 .schedule .items .date {
   font-weight: 600;
 }
