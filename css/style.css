@@ -240,6 +240,7 @@ footer .grid-item img {
 
 .schedule .items div {
   display: flex;
+  margin-bottom: 0.5rem;
 }
 
 .schedule .items div p:first-child {
